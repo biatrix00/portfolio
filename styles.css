@@ -450,3 +450,104 @@ textarea:focus,
     grid-template-columns: 1fr;
   }
 }
+
+.case-study {
+  padding: 1rem;
+}
+
+.case-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.case-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.case-columns h4 {
+  margin-bottom: 0.35rem;
+}
+
+.services-grid,
+.toolbox-grid,
+.testimonials-grid,
+.now-grid,
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.process-steps {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.process-steps li {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--ink-blue);
+  background: rgba(255, 255, 255, 0.22);
+  list-style-position: inside;
+}
+
+.process-steps span {
+  display: block;
+  color: var(--ink-blue-soft);
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.quote {
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.quote cite {
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.73rem;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+.final-cta {
+  text-align: center;
+}
+
+.final-cta .btn {
+  display: inline-block;
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 900px) {
+  .services-grid,
+  .toolbox-grid,
+  .testimonials-grid,
+  .now-grid,
+  .writing-grid,
+  .case-meta,
+  .case-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .services-grid,
+  .toolbox-grid,
+  .testimonials-grid,
+  .now-grid,
+  .writing-grid,
+  .case-meta,
+  .case-columns {
+    grid-template-columns: 1fr;
+  }
+}
